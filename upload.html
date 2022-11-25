@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="default.css" />
+    <title>Sticky Navigation</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+<img src="logo.jpg" alt="logo.png"width="100" height="80">
+        <h1 class="logo"><a href="/index.html">LUCA'S BREAD</a></h1>
+    <ul>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+          <li><a href="upload.html" class="current">Careers</a></li>
+          <li><a href="orderonline.php" accesskey="4" title="">Order online </a></li>
+          <li><a href="contactus.html">Contact</a></li>
+           <li><a href="contactus.html" accesskey="6" title="">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="container">
+        <h1>Welcome To Luca's Bread</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, consequuntur?</p>
+      </div>
+    </div>
+
+    <section class="contact_section layout_padding-bottom">
+      <h2>Join our team</h2>
+      <p> We are expanding our branches and need experienced baker regularly. Send us your detail with the form below and we will be in contact shortly</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="offset-lg-2 col-md-10 offset-md-1">
+            <div class="heading_container">
+              <hr>
+              <h2>Fill out the form below and upload your cover letter and resume</h2>
+            </div>
+          </div>
+        </div>
+        <div class="layout_padding2-top">
+          <div class="row">
+            <div class="col-lg-4 offset-lg-2 col-md-5 offset-md-1">
+              <form action="upload_file.php" method="post" enctype="multipart/form-data">
+                <div class="contact_form-container">
+                  <div>
+                    <div>
+                      <input type="text" input type="text" id="fname" name="fname" placeholder="First Name" />
+                    </div>
+                    <div>
+                      <input type="text" id="lname" name="lname" placeholder="Last Number" />
+                    </div>
+                    <div>
+                      <input type="text" id="email" name="email" placeholder="Email Address" />
+                    </div>
+                    <div>
+                      <input type="text" id="w3review" name="w3review" rows="4" cols="50" placeholder="Write about yourself in this field..." />
+                    </div>
+                    <div>
+                      <label for="file">Cover Letter</label>
+                      <input type="file" name="myfile[]" id="file"><br/>
+                      <label for="file">Resume</label>
+                      <input type="file" name="myfile[]" id="file2"><br/>
+                      <input type="submit" name="submit" value="Submit"><br/>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!--================ start footer Area  =================-->	
+   <footer class="footer-area p_120">
+    <div class="container">
+        
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <aside class="f_widget news_widget">
+          <p>Stay updated with our latest trends</p>
+          <div id="mc_embed_signup">
+                        <form target="_blank" action="" method="get" class="subscribe_form relative">
+                          <div class="input-group d-flex flex-row">
+                                <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                            </div>				
+                            <div class="mt-10 info"></div>
+                        </form>
+                    </div>
+        </aside>
+            </div>
+        </div>
+        <div class="row footer-bottom d-flex justify-content-between align-items-center">
+          <p class="col-lg-8 col-md-8 footer-text m-0">Copyright &copy; Luca bread@163.com.&nbsp;&nbsp;&nbsp;&nbsp;20IT2 Jacky(Wang Yanzhi)</p>
+            <div class="col-lg-4 col-md-4 footer-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--================ End footer Area  =================-->
+    <script src="script.js"></script>
+  </body>
+</html>
